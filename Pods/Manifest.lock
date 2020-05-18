@@ -1,0 +1,20 @@
+PODS:
+  - LoremIpsum (1.0.0)
+  - TinyConstraints (4.0.1)
+
+DEPENDENCIES:
+  - LoremIpsum
+  - TinyConstraints
+
+SPEC REPOS:
+  trunk:
+    - LoremIpsum
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
+
+PODFILE CHECKSUM: 7d1bf9146d4975b0e120e9e8ea99a499f58bd36e
+
+COCOAPODS: 1.8.4
