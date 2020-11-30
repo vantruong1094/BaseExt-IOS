@@ -9,6 +9,9 @@
 import UIKit
 
 class CompositionLayoutViewController: UIViewController {
+    enum Section {
+        case main
+    }
     
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -23,12 +26,20 @@ class CompositionLayoutViewController: UIViewController {
     }()
     
     var collectionV: UICollectionView!
+    var dataSource: UICollectionViewDiffableDataSource<Section, String>!
+    
+    var data: [String] = [
+        "Maecenas id erat non metus viverra semper efficitur in mauris. Morbi varius mi ex, vel mattis odio vehicula sit amet. Vestibulum non nisi bibendum",
+        "Vestibulum sit amet urna eu odio vestibulum gravida. Integer finibus tellus eget lacus malesuada, eu viverra risus interdum. Curabitur dignissim ullamcorper augue, aliquam consectetur lectus tristique et. Sed sed ipsum eleifend, varius erat ut, aliquam urna. Phasellus at convallis lorem. Nulla bibendum id magna et volutpat. Suspendisse potenti. Nulla pharetra imperdiet lorem, a commodo ipsum semper at. Maecenas pretium scelerisque nunc at accumsan. Integer gravida, massa non aliquet fringilla, justo nulla molestie mi, id pulvinar turpis lorem eu lorem.",
+        "Ut dapibus, ligula et elementum cursus, lorem sapien rhoncus nunc, nec bibendum massa sapien sed neque. Cras sit amet ex erat. Suspendisse facilisis semper libero, a placerat orci molestie non. Donec pretium est ut pulvinar porttitor. Vivamus in tristique tellus. Phasellus ac sem ipsum. Morbi sit amet mollis nisi. Nulla facilisi."
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setupViews()
+        configureDataSource()
     }
     
     func setupViews() {
@@ -38,22 +49,20 @@ class CompositionLayoutViewController: UIViewController {
         collectionV.register(cellWithClass: CompositionItemCollectionViewCell.self)
         view.addSubview(collectionV)
         collectionV.edgesToSuperview()
-        collectionV.dataSource = self
-        collectionV.delegate = self
-        
+
 //        view.addSubview(collectionView)
 //        collectionView.edgesToSuperview()
 //        collectionView.dataSource = self
 //        collectionView.delegate = self
     }
     
-    func createLayout() -> UICollectionViewLayout {
+    func createLayout() -> UICollectionViewCompositionalLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                             heightDimension: .estimated(100))
+                                             heightDimension: .estimated(50))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.edgeSpacing = NSCollectionLayoutEdgeSpacing(leading: nil, top: .fixed(8), trailing: nil, bottom: nil)
+        item.edgeSpacing = NSCollectionLayoutEdgeSpacing(leading: nil, top: .fixed(8), trailing: nil, bottom: .fixed(8))
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .estimated(100))
+                                              heightDimension: .estimated(50))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
                                                          subitems: [item])
 
@@ -61,30 +70,42 @@ class CompositionLayoutViewController: UIViewController {
 
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
+//        return UICollectionViewCompositionalLayout { (numSection, evn) -> NSCollectionLayoutSection? in
+//            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+//                                                  heightDimension: .estimated(50))
+//            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+//            item.edgeSpacing = NSCollectionLayoutEdgeSpacing(leading: nil, top: .fixed(8), trailing: nil, bottom: .fixed(8))
+//            //item.contentInsets.bottom = 16
+//            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+//                                                   heightDimension: .estimated(50))
+//            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
+//                                                           subitems: [item])
+//
+//            let section = NSCollectionLayoutSection(group: group)
+//            return section
+//        }
     }
-}
+    
+    private func configureDataSource() {
+        dataSource = UICollectionViewDiffableDataSource<Section, String>(collectionView: collectionV) {
+            (collectionView: UICollectionView, indexPath: IndexPath, item: String) -> UICollectionViewCell? in
 
-extension CompositionLayoutViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withClass: CompositionItemCollectionViewCell.self, for: indexPath)
-        cell.configureCell(indexPath)
-        return cell
-    }
-    
-}
+            // Get a cell of the desired kind.
+            let cell = collectionView.dequeueReusableCell(withClass: CompositionItemCollectionViewCell.self, for: indexPath)
 
-extension CompositionLayoutViewController: UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("didSelectItemAt ---> \(indexPath.row)")
+            // Populate the cell with our item description.
+            cell.configureCell(indexPath)
+
+            // Return the cell.
+            return cell
+        }
+
+        // initial data
+        var snapshot = NSDiffableDataSourceSnapshot<Section, String>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(["data", "a", "v","g", "n","h" , "r", "y", "k"])
+        dataSource.apply(snapshot, animatingDifferences: false)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: collectionView.frame.width, height: 100)
-    }
+
 }
 

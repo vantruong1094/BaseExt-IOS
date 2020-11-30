@@ -57,6 +57,10 @@
 		9284FA70240E14C800CEA4E1 /* CompositionLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284FA6F240E14C800CEA4E1 /* CompositionLayoutViewController.swift */; };
 		9284FA72240E162500CEA4E1 /* CompositionItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284FA71240E162500CEA4E1 /* CompositionItemCollectionViewCell.swift */; };
 		9284FA75240E179500CEA4E1 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284FA74240E179500CEA4E1 /* UICollectionViewExtension.swift */; };
+		929F95E9255A9B5F00198B30 /* Credits.plist in Resources */ = {isa = PBXBuildFile; fileRef = 929F95E8255A9B5F00198B30 /* Credits.plist */; };
+		929F95F2255A9E2D00198B30 /* NSDictionary+LicenseItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F95F0255A9E2D00198B30 /* NSDictionary+LicenseItems.swift */; };
+		929F95F3255A9E2D00198B30 /* NSBundle+Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F95F1255A9E2D00198B30 /* NSBundle+Plist.swift */; };
+		929F95F6255A9E5100198B30 /* LicensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F95F5255A9E5100198B30 /* LicensesViewController.swift */; };
 		92A5B95423A341CF00D9B9C0 /* TextFieldWithLeftIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5B95323A341CF00D9B9C0 /* TextFieldWithLeftIcon.swift */; };
 		92B7415A23A8B0FD000414B1 /* PressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B7415923A8B0FD000414B1 /* PressButton.swift */; };
 		92B7415C23A8B8CD000414B1 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B7415B23A8B8CD000414B1 /* MaterialTextField.swift */; };
@@ -114,6 +118,10 @@
 		9284FA6F240E14C800CEA4E1 /* CompositionLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionLayoutViewController.swift; sourceTree = "<group>"; };
 		9284FA71240E162500CEA4E1 /* CompositionItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		9284FA74240E179500CEA4E1 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		929F95E8255A9B5F00198B30 /* Credits.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Credits.plist; sourceTree = "<group>"; };
+		929F95F0255A9E2D00198B30 /* NSDictionary+LicenseItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+LicenseItems.swift"; sourceTree = "<group>"; };
+		929F95F1255A9E2D00198B30 /* NSBundle+Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Plist.swift"; sourceTree = "<group>"; };
+		929F95F5255A9E5100198B30 /* LicensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LicensesViewController.swift; sourceTree = "<group>"; };
 		92A5B95323A341CF00D9B9C0 /* TextFieldWithLeftIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithLeftIcon.swift; sourceTree = "<group>"; };
 		92B7415923A8B0FD000414B1 /* PressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButton.swift; sourceTree = "<group>"; };
 		92B7415B23A8B8CD000414B1 /* MaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
@@ -172,6 +180,9 @@
 		924706B9239EA1B300C9F4AE /* BaseExtension */ = {
 			isa = PBXGroup;
 			children = (
+				929F95F5255A9E5100198B30 /* LicensesViewController.swift */,
+				929F95F1255A9E2D00198B30 /* NSBundle+Plist.swift */,
+				929F95F0255A9E2D00198B30 /* NSDictionary+LicenseItems.swift */,
 				9284FA73240E177B00CEA4E1 /* Extensions */,
 				9284FA6E240E144A00CEA4E1 /* CompositionLayoutCollectionView */,
 				920670F523A1F15600A51ABE /* Demo */,
@@ -183,6 +194,7 @@
 				924706C3239EA1B400C9F4AE /* LaunchScreen.storyboard */,
 				924706C6239EA1B400C9F4AE /* Info.plist */,
 				9274510123AB6DB600E9A6B3 /* MainPreviews.swift */,
+				929F95E8255A9B5F00198B30 /* Credits.plist */,
 			);
 			path = BaseExtension;
 			sourceTree = "<group>";
@@ -433,6 +445,7 @@
 				924706B4239EA1B300C9F4AE /* Frameworks */,
 				924706B5239EA1B300C9F4AE /* Resources */,
 				FCDA1DF917014603B1FCD9D0 /* [CP] Embed Pods Frameworks */,
+				929F95E2255A9AA400198B30 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -484,12 +497,30 @@
 				924706C5239EA1B400C9F4AE /* LaunchScreen.storyboard in Resources */,
 				924706C2239EA1B400C9F4AE /* Assets.xcassets in Resources */,
 				924706C0239EA1B300C9F4AE /* Main.storyboard in Resources */,
+				929F95E9255A9B5F00198B30 /* Credits.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		929F95E2255A9AA400198B30 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./credits.py -s \"${PODS_ROOT}\" -o \"$SRCROOT/BaseExtension/Credits.plist\"\n";
+		};
 		A47FE6A1F0F1E39915103075 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,6 +599,7 @@
 				92470733239EA4B900C9F4AE /* D_ListHeader.swift in Sources */,
 				92470714239EA4B900C9F4AE /* D_ScrollView.swift in Sources */,
 				92470726239EA4B900C9F4AE /* D_TextField+.swift in Sources */,
+				929F95F6255A9E5100198B30 /* LicensesViewController.swift in Sources */,
 				9247070F239EA4B900C9F4AE /* D_SCView.swift in Sources */,
 				92470710239EA4B900C9F4AE /* D_InfoPlistParser.swift in Sources */,
 				92470721239EA4B900C9F4AE /* UIApplication+.swift in Sources */,
@@ -579,6 +611,8 @@
 				92470716239EA4B900C9F4AE /* D_Debug.swift in Sources */,
 				9274510223AB6DB600E9A6B3 /* MainPreviews.swift in Sources */,
 				92470713239EA4B900C9F4AE /* D_ScrollView+.swift in Sources */,
+				929F95F2255A9E2D00198B30 /* NSDictionary+LicenseItems.swift in Sources */,
+				929F95F3255A9E2D00198B30 /* NSBundle+Plist.swift in Sources */,
 				92470719239EA4B900C9F4AE /* D_ActivityController.swift in Sources */,
 				9284FA75240E179500CEA4E1 /* UICollectionViewExtension.swift in Sources */,
 				92B7415A23A8B0FD000414B1 /* PressButton.swift in Sources */,
