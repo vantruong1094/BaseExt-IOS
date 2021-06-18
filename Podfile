@@ -9,5 +9,6 @@ target 'BaseExtension' do
   pod 'LoremIpsum'
   pod "TinyConstraints"
   pod 'Charts'
+  pod 'Alamofire'
   
 end

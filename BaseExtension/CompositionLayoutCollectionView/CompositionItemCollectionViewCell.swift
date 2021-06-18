@@ -16,16 +16,15 @@ class CompositionItemCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .orange
-        D_VStack(titleLabel, viewHidden).padding([.left, .right, .bottom], amount: 16)
-        titleLabel.text = LoremIpsum.name()
+        //D_VStack(titleLabel).padding([.left, .right, .bottom], amount: 16)
+        addSubview(titleLabel)
+        titleLabel.edgesToSuperview()
+        
     }
     
     func configureCell(_ index: IndexPath) {
-        if index.row % 2 == 0 {
-            viewHidden.isHidden = true
-        } else {
-            viewHidden.isHidden = false
-        }
+        titleLabel.text = "Maecenas id erat non metus viverra semper efficitur in mauris. Morbi varius mi ex, vel mattis odio vehicula sit amet. Vestibulum non nisi bibendum"
+        
     }
     
     required init?(coder: NSCoder) {

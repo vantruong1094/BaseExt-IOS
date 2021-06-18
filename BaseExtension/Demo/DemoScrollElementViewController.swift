@@ -10,6 +10,7 @@ import UIKit
 import LoremIpsum
 import TinyConstraints
 
+
 class DemoScrollElementViewController: UIViewController {
     
     //Configure ScrollView
@@ -57,6 +58,7 @@ class DemoScrollElementViewController: UIViewController {
         materialTF.textField.placeholderColor(.white)
         
         loginBtn.heightAnchor.constraint(equalToConstant: 45).isActive = true
+        loginBtn.addTarget(self, action: #selector(onTapLoginButton), for: .touchUpInside)
         
         let viewBottom = UIView().D_HStack(UIView().setFrame(.init(width: 60, height: 60)).setBackground(color: .systemGreen),
                                            UIView().setFrame(.init(width: 60, height: 60)).setBackground(color: .systemGreen),
@@ -84,5 +86,11 @@ class DemoScrollElementViewController: UIViewController {
         passwordTextField.heightAnchor.constraint(equalToConstant: 48).isActive = true
         loginBtn.heightAnchor.constraint(equalToConstant: 45).isActive = true
         scrollview.showsVerticalScrollIndicator = false
+    }
+    
+    @objc func onTapLoginButton() {
+        let licensesController = LicensesViewController()
+        licensesController.loadPlist(Bundle.main, resourceName: "Credits")
+        navigationController?.pushViewController(licensesController, animated: true)
     }
 }
