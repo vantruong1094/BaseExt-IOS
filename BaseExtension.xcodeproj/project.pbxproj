@@ -64,6 +64,7 @@
 		92A5B95423A341CF00D9B9C0 /* TextFieldWithLeftIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5B95323A341CF00D9B9C0 /* TextFieldWithLeftIcon.swift */; };
 		92B7415A23A8B0FD000414B1 /* PressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B7415923A8B0FD000414B1 /* PressButton.swift */; };
 		92B7415C23A8B8CD000414B1 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B7415B23A8B8CD000414B1 /* MaterialTextField.swift */; };
+		92D8B412267C375D00BDC226 /* DemoChartBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8B411267C375D00BDC226 /* DemoChartBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +126,7 @@
 		92A5B95323A341CF00D9B9C0 /* TextFieldWithLeftIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithLeftIcon.swift; sourceTree = "<group>"; };
 		92B7415923A8B0FD000414B1 /* PressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButton.swift; sourceTree = "<group>"; };
 		92B7415B23A8B8CD000414B1 /* MaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		92D8B411267C375D00BDC226 /* DemoChartBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoChartBarViewController.swift; sourceTree = "<group>"; };
 		C11FE2F69D16192BE2E61CDC /* Pods-BaseExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseExtension.debug.xcconfig"; path = "Target Support Files/Pods-BaseExtension/Pods-BaseExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		CA8C32582C881519F5C7FE4B /* Pods-BaseExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseExtension.release.xcconfig"; path = "Target Support Files/Pods-BaseExtension/Pods-BaseExtension.release.xcconfig"; sourceTree = "<group>"; };
 		D13853F2C65B4DF6F6BE8CF4 /* Pods_BaseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				920670F623A1F16D00A51ABE /* DemoScrollElementViewController.swift */,
+				92D8B411267C375D00BDC226 /* DemoChartBarViewController.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -519,7 +522,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./credits.py -s \"${PODS_ROOT}\" -o \"$SRCROOT/BaseExtension/Credits.plist\"\n";
+			shellScript = "
+";
 		};
 		A47FE6A1F0F1E39915103075 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -597,6 +601,7 @@
 				9247072A239EA4B900C9F4AE /* D_Line.swift in Sources */,
 				9284FA72240E162500CEA4E1 /* CompositionItemCollectionViewCell.swift in Sources */,
 				92470733239EA4B900C9F4AE /* D_ListHeader.swift in Sources */,
+				92D8B412267C375D00BDC226 /* DemoChartBarViewController.swift in Sources */,
 				92470714239EA4B900C9F4AE /* D_ScrollView.swift in Sources */,
 				92470726239EA4B900C9F4AE /* D_TextField+.swift in Sources */,
 				929F95F6255A9E5100198B30 /* LicensesViewController.swift in Sources */,
