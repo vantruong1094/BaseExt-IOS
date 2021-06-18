@@ -1,20 +1,26 @@
 PODS:
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - LoremIpsum (1.0.0)
   - TinyConstraints (4.0.1)
 
 DEPENDENCIES:
+  - Charts
   - LoremIpsum
   - TinyConstraints
 
 SPEC REPOS:
   trunk:
+    - Charts
     - LoremIpsum
     - TinyConstraints
 
 SPEC CHECKSUMS:
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
   TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: 7d1bf9146d4975b0e120e9e8ea99a499f58bd36e
+PODFILE CHECKSUM: 3ba10c96bcf60558f3f089be9a250e644e427972
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0

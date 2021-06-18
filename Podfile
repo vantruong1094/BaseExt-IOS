@@ -8,5 +8,6 @@ target 'BaseExtension' do
   # Pods for BaseExtension
   pod 'LoremIpsum'
   pod "TinyConstraints"
+  pod 'Charts'
   
 end
