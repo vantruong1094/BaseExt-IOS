@@ -5,12 +5,14 @@ PODS:
   - Charts/Core (3.6.0)
   - LoremIpsum (2.0.0)
   - TinyConstraints (4.0.1)
+  - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - Charts
   - LoremIpsum
   - TinyConstraints
+  - XLPagerTabStrip
 
 SPEC REPOS:
   trunk:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - Charts
     - LoremIpsum
     - TinyConstraints
+    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
   Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   LoremIpsum: 25837e6f8f9c63471c23140be3e4c6e1b6743c9e
   TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: 862a4e2c52a4f9a980f192d4c614f3f30f0e1201
+PODFILE CHECKSUM: 4fb1ae2e93cfef89fbec5cf89a4ce00128f0f5e2
 
 COCOAPODS: 1.10.0

@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		0161BAE67232E0FC0859EC15 /* Pods_BaseExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13853F2C65B4DF6F6BE8CF4 /* Pods_BaseExtension.framework */; };
 		920670F723A1F16D00A51ABE /* DemoScrollElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920670F623A1F16D00A51ABE /* DemoScrollElementViewController.swift */; };
+		921D9F63267F281D008A51C1 /* BasePagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F62267F281D008A51C1 /* BasePagingViewController.swift */; };
+		921D9F66267F293B008A51C1 /* OneChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F65267F293B008A51C1 /* OneChildViewController.swift */; };
+		921D9F69267F2950008A51C1 /* TwoChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F68267F2950008A51C1 /* TwoChildViewController.swift */; };
+		921D9F6C267F2964008A51C1 /* ThreeChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F6B267F2964008A51C1 /* ThreeChildViewController.swift */; };
+		921D9F6F267F297B008A51C1 /* DemoPagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F6E267F297B008A51C1 /* DemoPagingViewController.swift */; };
+		921D9F72267F2ECE008A51C1 /* DemoBarTitlePagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F71267F2ECE008A51C1 /* DemoBarTitlePagingViewController.swift */; };
+		921D9F75267F2F03008A51C1 /* BarTitlePagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F74267F2F03008A51C1 /* BarTitlePagingViewController.swift */; };
+		921D9F79267F4533008A51C1 /* PageTitleViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F78267F4533008A51C1 /* PageTitleViewConfiguration.swift */; };
+		921D9F7D267F45FD008A51C1 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F7C267F45FD008A51C1 /* PageTitleView.swift */; };
 		924706BB239EA1B300C9F4AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924706BA239EA1B300C9F4AE /* AppDelegate.swift */; };
 		924706BD239EA1B300C9F4AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924706BC239EA1B300C9F4AE /* ViewController.swift */; };
 		924706C0239EA1B300C9F4AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924706BE239EA1B300C9F4AE /* Main.storyboard */; };
@@ -69,6 +78,15 @@
 
 /* Begin PBXFileReference section */
 		920670F623A1F16D00A51ABE /* DemoScrollElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScrollElementViewController.swift; sourceTree = "<group>"; };
+		921D9F62267F281D008A51C1 /* BasePagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePagingViewController.swift; sourceTree = "<group>"; };
+		921D9F65267F293B008A51C1 /* OneChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneChildViewController.swift; sourceTree = "<group>"; };
+		921D9F68267F2950008A51C1 /* TwoChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoChildViewController.swift; sourceTree = "<group>"; };
+		921D9F6B267F2964008A51C1 /* ThreeChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeChildViewController.swift; sourceTree = "<group>"; };
+		921D9F6E267F297B008A51C1 /* DemoPagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPagingViewController.swift; sourceTree = "<group>"; };
+		921D9F71267F2ECE008A51C1 /* DemoBarTitlePagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoBarTitlePagingViewController.swift; sourceTree = "<group>"; };
+		921D9F74267F2F03008A51C1 /* BarTitlePagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarTitlePagingViewController.swift; sourceTree = "<group>"; };
+		921D9F78267F4533008A51C1 /* PageTitleViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleViewConfiguration.swift; sourceTree = "<group>"; };
+		921D9F7C267F45FD008A51C1 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		924706B7239EA1B300C9F4AE /* BaseExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924706BA239EA1B300C9F4AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		924706BC239EA1B300C9F4AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,10 +174,35 @@
 		920670F523A1F15600A51ABE /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				921D9F61267F2807008A51C1 /* Pages */,
 				920670F623A1F16D00A51ABE /* DemoScrollElementViewController.swift */,
 				92D8B411267C375D00BDC226 /* DemoChartBarViewController.swift */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		921D9F61267F2807008A51C1 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				921D9F77267F4511008A51C1 /* TitleView */,
+				921D9F62267F281D008A51C1 /* BasePagingViewController.swift */,
+				921D9F65267F293B008A51C1 /* OneChildViewController.swift */,
+				921D9F68267F2950008A51C1 /* TwoChildViewController.swift */,
+				921D9F6B267F2964008A51C1 /* ThreeChildViewController.swift */,
+				921D9F6E267F297B008A51C1 /* DemoPagingViewController.swift */,
+				921D9F71267F2ECE008A51C1 /* DemoBarTitlePagingViewController.swift */,
+				921D9F74267F2F03008A51C1 /* BarTitlePagingViewController.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		921D9F77267F4511008A51C1 /* TitleView */ = {
+			isa = PBXGroup;
+			children = (
+				921D9F78267F4533008A51C1 /* PageTitleViewConfiguration.swift */,
+				921D9F7C267F45FD008A51C1 /* PageTitleView.swift */,
+			);
+			path = TitleView;
 			sourceTree = "<group>";
 		};
 		924706AE239EA1B300C9F4AE = {
@@ -573,14 +616,17 @@
 			files = (
 				9247072C239EA4B900C9F4AE /* D_ListController.swift in Sources */,
 				920670F723A1F16D00A51ABE /* DemoScrollElementViewController.swift in Sources */,
+				921D9F72267F2ECE008A51C1 /* DemoBarTitlePagingViewController.swift in Sources */,
 				92470731239EA4B900C9F4AE /* D_ListBackgroundImages.swift in Sources */,
 				92470727239EA4B900C9F4AE /* D_TextField.swift in Sources */,
 				9247071B239EA4B900C9F4AE /* UINavigationController+.swift in Sources */,
 				92470730239EA4B900C9F4AE /* D_ListHFController.swift in Sources */,
 				9247071F239EA4B900C9F4AE /* UIButton+.swift in Sources */,
+				921D9F66267F293B008A51C1 /* OneChildViewController.swift in Sources */,
 				9247070D239EA4B900C9F4AE /* D_SCButtonView.swift in Sources */,
 				9247071E239EA4B900C9F4AE /* UILabel+.swift in Sources */,
 				92A5B95423A341CF00D9B9C0 /* TextFieldWithLeftIcon.swift in Sources */,
+				921D9F7D267F45FD008A51C1 /* PageTitleView.swift in Sources */,
 				92470735239EA4B900C9F4AE /* D_Enums.swift in Sources */,
 				9247071A239EA4B900C9F4AE /* D_Stack.swift in Sources */,
 				9284FA70240E14C800CEA4E1 /* CompositionLayoutViewController.swift in Sources */,
@@ -595,10 +641,15 @@
 				92470725239EA4B900C9F4AE /* D_TextView+.swift in Sources */,
 				92470732239EA4B900C9F4AE /* D_ListFController.swift in Sources */,
 				9247071C239EA4B900C9F4AE /* UIView+.swift in Sources */,
+				921D9F6F267F297B008A51C1 /* DemoPagingViewController.swift in Sources */,
 				924706BD239EA1B300C9F4AE /* ViewController.swift in Sources */,
+				921D9F63267F281D008A51C1 /* BasePagingViewController.swift in Sources */,
 				92470712239EA4B900C9F4AE /* D_ScrollViewElement.swift in Sources */,
+				921D9F79267F4533008A51C1 /* PageTitleViewConfiguration.swift in Sources */,
+				921D9F69267F2950008A51C1 /* TwoChildViewController.swift in Sources */,
 				92470737239EA70000C9F4AE /* RSKPlaceholderTextView.swift in Sources */,
 				9247072A239EA4B900C9F4AE /* D_Line.swift in Sources */,
+				921D9F75267F2F03008A51C1 /* BarTitlePagingViewController.swift in Sources */,
 				9284FA72240E162500CEA4E1 /* CompositionItemCollectionViewCell.swift in Sources */,
 				92470733239EA4B900C9F4AE /* D_ListHeader.swift in Sources */,
 				92D8B412267C375D00BDC226 /* DemoChartBarViewController.swift in Sources */,
@@ -620,6 +671,7 @@
 				929F95F3255A9E2D00198B30 /* NSBundle+Plist.swift in Sources */,
 				92470719239EA4B900C9F4AE /* D_ActivityController.swift in Sources */,
 				9284FA75240E179500CEA4E1 /* UICollectionViewExtension.swift in Sources */,
+				921D9F6C267F2964008A51C1 /* ThreeChildViewController.swift in Sources */,
 				92B7415A23A8B0FD000414B1 /* PressButton.swift in Sources */,
 				92B7415C23A8B8CD000414B1 /* MaterialTextField.swift in Sources */,
 				92470723239EA4B900C9F4AE /* Array+.swift in Sources */,

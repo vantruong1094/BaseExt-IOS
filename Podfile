@@ -10,5 +10,6 @@ target 'BaseExtension' do
   pod "TinyConstraints"
   pod 'Charts'
   pod 'Alamofire'
+  pod 'XLPagerTabStrip'
   
 end
