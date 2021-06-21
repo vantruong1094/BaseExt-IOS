@@ -18,6 +18,9 @@
 		921D9F75267F2F03008A51C1 /* BarTitlePagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F74267F2F03008A51C1 /* BarTitlePagingViewController.swift */; };
 		921D9F79267F4533008A51C1 /* PageTitleViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F78267F4533008A51C1 /* PageTitleViewConfiguration.swift */; };
 		921D9F7D267F45FD008A51C1 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9F7C267F45FD008A51C1 /* PageTitleView.swift */; };
+		9239CB4826802C5A00D6CC95 /* CustomColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239CB4726802C5A00D6CC95 /* CustomColorSlider.swift */; };
+		9239CB4B26802C8400D6CC95 /* BMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239CB4A26802C8400D6CC95 /* BMIView.swift */; };
+		9239CB4E26802D6300D6CC95 /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239CB4D26802D6300D6CC95 /* BMIViewController.swift */; };
 		924706BB239EA1B300C9F4AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924706BA239EA1B300C9F4AE /* AppDelegate.swift */; };
 		924706BD239EA1B300C9F4AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924706BC239EA1B300C9F4AE /* ViewController.swift */; };
 		924706C0239EA1B300C9F4AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 924706BE239EA1B300C9F4AE /* Main.storyboard */; };
@@ -87,6 +90,9 @@
 		921D9F74267F2F03008A51C1 /* BarTitlePagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarTitlePagingViewController.swift; sourceTree = "<group>"; };
 		921D9F78267F4533008A51C1 /* PageTitleViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleViewConfiguration.swift; sourceTree = "<group>"; };
 		921D9F7C267F45FD008A51C1 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		9239CB4726802C5A00D6CC95 /* CustomColorSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColorSlider.swift; sourceTree = "<group>"; };
+		9239CB4A26802C8400D6CC95 /* BMIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIView.swift; sourceTree = "<group>"; };
+		9239CB4D26802D6300D6CC95 /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
 		924706B7239EA1B300C9F4AE /* BaseExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		924706BA239EA1B300C9F4AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		924706BC239EA1B300C9F4AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +180,7 @@
 		920670F523A1F15600A51ABE /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				9239CB4526802C2B00D6CC95 /* BMIView */,
 				921D9F61267F2807008A51C1 /* Pages */,
 				920670F623A1F16D00A51ABE /* DemoScrollElementViewController.swift */,
 				92D8B411267C375D00BDC226 /* DemoChartBarViewController.swift */,
@@ -203,6 +210,16 @@
 				921D9F7C267F45FD008A51C1 /* PageTitleView.swift */,
 			);
 			path = TitleView;
+			sourceTree = "<group>";
+		};
+		9239CB4526802C2B00D6CC95 /* BMIView */ = {
+			isa = PBXGroup;
+			children = (
+				9239CB4726802C5A00D6CC95 /* CustomColorSlider.swift */,
+				9239CB4A26802C8400D6CC95 /* BMIView.swift */,
+				9239CB4D26802D6300D6CC95 /* BMIViewController.swift */,
+			);
+			path = BMIView;
 			sourceTree = "<group>";
 		};
 		924706AE239EA1B300C9F4AE = {
@@ -632,6 +649,7 @@
 				9284FA70240E14C800CEA4E1 /* CompositionLayoutViewController.swift in Sources */,
 				9247072B239EA4B900C9F4AE /* D_Log.swift in Sources */,
 				9247071D239EA4B900C9F4AE /* UIStackView+.swift in Sources */,
+				9239CB4826802C5A00D6CC95 /* CustomColorSlider.swift in Sources */,
 				9247072E239EA4B900C9F4AE /* D_ListCell.swift in Sources */,
 				92470734239EA4B900C9F4AE /* D_Color.swift in Sources */,
 				9247070E239EA4B900C9F4AE /* D_SCImageView.swift in Sources */,
@@ -640,6 +658,7 @@
 				92470715239EA4B900C9F4AE /* D_ScrollViewContainer.swift in Sources */,
 				92470725239EA4B900C9F4AE /* D_TextView+.swift in Sources */,
 				92470732239EA4B900C9F4AE /* D_ListFController.swift in Sources */,
+				9239CB4B26802C8400D6CC95 /* BMIView.swift in Sources */,
 				9247071C239EA4B900C9F4AE /* UIView+.swift in Sources */,
 				921D9F6F267F297B008A51C1 /* DemoPagingViewController.swift in Sources */,
 				924706BD239EA1B300C9F4AE /* ViewController.swift in Sources */,
@@ -650,6 +669,7 @@
 				92470737239EA70000C9F4AE /* RSKPlaceholderTextView.swift in Sources */,
 				9247072A239EA4B900C9F4AE /* D_Line.swift in Sources */,
 				921D9F75267F2F03008A51C1 /* BarTitlePagingViewController.swift in Sources */,
+				9239CB4E26802D6300D6CC95 /* BMIViewController.swift in Sources */,
 				9284FA72240E162500CEA4E1 /* CompositionItemCollectionViewCell.swift in Sources */,
 				92470733239EA4B900C9F4AE /* D_ListHeader.swift in Sources */,
 				92D8B412267C375D00BDC226 /* DemoChartBarViewController.swift in Sources */,
